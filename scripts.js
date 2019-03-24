@@ -28,11 +28,13 @@ $(document).ready(function () {
 
   });
 
-  $("#contenedor-chat p").each(function () {
-    var text = $(this).text();
-    var mensaje = emojione.shortnameToImage(text);
-    $(this).html(mensaje)
-  });
+  setTimeout(function () {
+    $("#contenedor-chat p").each(function () {
+      var text = $(this).text();
+      var mensaje = emojione.shortnameToImage(text);
+      $(this).html(mensaje)
+    });
+  }, 300);
 
 
 });
